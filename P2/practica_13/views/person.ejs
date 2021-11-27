@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        Hola desde el EJS <br>
+        <script>
+            var numero = <%= ID %>;
+             
+            if(numero %2 == 0)
+              document.write('El numero ' +numero+ ' es par.' +'<br>');
+              else{
+                document.write('El numero ' +numero+ ' es impar.' +'<br>');
+              }
+            document.write("<ul>");
+            for(let i=1;i<=numero;i++){
+                document.write("<li>"+i + "<br>" +"</li>");
+            }
+            document.write("</ul>");
+            </script>
+    </body>
+</html>
